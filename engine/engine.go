@@ -260,7 +260,7 @@ func (e *Docker) create(ctx context.Context, spec *Spec, step *Step, output io.W
 		}
 	}
 
-	println("host config", toHostConfig(spec, step))
+	println("host config {:?}", toHostConfig(spec, step))
 	_, err := e.client.ContainerCreate(ctx,
 		toConfig(spec, step),
 		toHostConfig(spec, step),
@@ -270,7 +270,7 @@ func (e *Docker) create(ctx context.Context, spec *Spec, step *Step, output io.W
 	)
 
 	if err != nil {
-		println("-------", err)
+		println("------- {:?}", err)
 	}
 
 	// automatically pull and try to re-create the image if the
@@ -291,7 +291,7 @@ func (e *Docker) create(ctx context.Context, spec *Spec, step *Step, output io.W
 		// once the image is successfully pulled we attempt to
 		// re-create the container.
 		// TODO: fix that - platform
-		println("host config 222 ", toHostConfig(spec, step))
+		println("host config 222 {:?} ", toHostConfig(spec, step))
 		_, err = e.client.ContainerCreate(ctx,
 			toConfig(spec, step),
 			toHostConfig(spec, step),
