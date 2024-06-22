@@ -260,7 +260,6 @@ func (e *Docker) create(ctx context.Context, spec *Spec, step *Step, output io.W
 		}
 	}
 
-	// TODO: fix that - platform
 	_, err := e.client.ContainerCreate(ctx,
 		toConfig(spec, step),
 		toHostConfig(spec, step),
@@ -268,6 +267,10 @@ func (e *Docker) create(ctx context.Context, spec *Spec, step *Step, output io.W
 		nil,
 		step.ID,
 	)
+
+	if err != nil {
+		println(err)
+	}
 
 	// automatically pull and try to re-create the image if the
 	// failure is caused because the image does not exist.
@@ -294,6 +297,9 @@ func (e *Docker) create(ctx context.Context, spec *Spec, step *Step, output io.W
 			nil,
 			step.ID,
 		)
+		if err != nil {
+			println(err)
+		}
 	}
 	if err != nil {
 		return err
