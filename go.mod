@@ -72,4 +72,4 @@ require (
 
 replace gopkg.in/alecthomas/kingpin.v2 => github.com/alecthomas/kingpin/v2 v2.4.0
 
-replace github.com/docker/docker => github.com/aitem/moby v0.0.0-20240622172954-461424aafe66 // indirect
+replace github.com/docker/docker v27.0.1-rc.1.0.20240621131212-ff1e2c0de72a+incompatible => github.com/aitem/moby v0.0.0-20240622172954-461424aafe66 // indirect
