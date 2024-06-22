@@ -10,6 +10,14 @@ replace gopkg.in/alecthomas/kingpin.v2 => github.com/alecthomas/kingpin/v2 v2.4.
 
 replace github.com/docker/docker => github.com/aitem/moby v0.0.0-20240622172954-461424aafe66 // indirect
 
+replace github.com/docker/docker/volume/mounts => github.com/aitem/moby/volume/mounts v0.0.0-20240622172954-461424aafe66 // indirect
+
+replace github.com/docker/docker/volume => github.com/aitem/moby/volume v0.0.0-20240622172954-461424aafe66 // indirect
+
+replace github.com/docker/docker/api/types/mount => github.com/aitem/moby/api/types/mount v0.0.0-20240622172954-461424aafe66 // indirect
+
+replace github.com/docker/docker/client => github.com/aitem/moby/client v0.0.0-20240622172954-461424aafe66 // indirect
+
 require (
 	github.com/buildkite/yaml v2.1.0+incompatible
 	github.com/dchest/uniuri v1.2.0
@@ -73,4 +81,3 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gotest.tools/v3 v3.5.1 // indirect
 )
-
