@@ -8,21 +8,17 @@ toolchain go1.21.6
 
 replace gopkg.in/alecthomas/kingpin.v2 => github.com/alecthomas/kingpin/v2 v2.4.0
 
-replace github.com/docker/docker => github.com/aitem/moby v0.0.0-20240622172954-461424aafe66 // indirect
-
 replace github.com/docker/docker/volume/mounts => github.com/aitem/moby/volume/mounts v0.0.0-20240622172954-461424aafe66 // indirect
 
-replace github.com/docker/docker/volume => github.com/aitem/moby/volume v0.0.0-20240622172954-461424aafe66 // indirect
+replace github.com/docker/docker/api/types/mount => github.com/aitem/moby/api/types/moount v0.0.0-20240622172954-461424aafe66 // indirect
 
-replace github.com/docker/docker/api/types/mount => github.com/aitem/moby/api/types/mount v0.0.0-20240622172954-461424aafe66 // indirect
-
-replace github.com/docker/docker/client => github.com/aitem/moby/client v0.0.0-20240622172954-461424aafe66 // indirect
+replace github.com/docker/docker => github.com/aitem/moby v0.0.0-20240622172954-461424aafe66
 
 require (
 	github.com/buildkite/yaml v2.1.0+incompatible
 	github.com/dchest/uniuri v1.2.0
 	github.com/docker/distribution v0.0.0-20210126121258-a91f895a50e9 // v2.8.3+incompatible
-	github.com/docker/docker v27.0.1+incompatible
+	github.com/docker/docker v27.0.0+incompatible
 	github.com/drone/drone-go v1.7.1
 	github.com/drone/envsubst v1.0.3
 	github.com/drone/runner-go v1.12.0
@@ -80,4 +76,9 @@ require (
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gotest.tools/v3 v3.5.1 // indirect
+)
+
+require (
+	github.com/moby/sys/user v0.1.0 // indirect
+	github.com/opencontainers/selinux v1.11.0 // indirect
 )

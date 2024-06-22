@@ -10,7 +10,12 @@ import (
 	"github.com/docker/docker/api/types/container"
 	"github.com/docker/docker/api/types/mount"
 	"github.com/docker/docker/api/types/network"
+	"github.com/docker/docker/volume/mounts"
 )
+
+type T struct {
+	placeholder mounts.MountPoint
+}
 
 // returns a container configuration.
 func toConfig(spec *Spec, step *Step) *container.Config {
