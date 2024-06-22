@@ -11,8 +11,8 @@ github.com/Azure/go-autorest v10.8.1+incompatible/go.mod h1:r+4oMnoxhatjLLJ6zxSW
 github.com/Microsoft/go-winio v0.6.2 h1:F2VQgta7ecxGYO8k3ZZz3RS8fVIXVxONVUPlNERoyfY=
 github.com/Microsoft/go-winio v0.6.2/go.mod h1:yd8OoFMLzJbo9gZq8j5qaps8bJ9aShtEA8Ipt1oGCvU=
 github.com/Shopify/logrus-bugsnag v0.0.0-20171204204709-577dee27f20d/go.mod h1:HI8ITrYtUY+O+ZhtlqUnD8+KwNPOyugEhfP9fdUIaEQ=
-github.com/aitem/moby v0.0.0-20240622172954-461424aafe66 h1:TdyfKg+Xkit1kJ1inoRthYkxd5qcHrGK216BwlAJ8E4=
-github.com/aitem/moby v0.0.0-20240622172954-461424aafe66/go.mod h1:RJBaa2t5bp90WMPZu0VecMGCeITyyOUw+u53hdS1/Sc=
+github.com/aitem/moby v0.0.0-20240622202140-24af7d8d6123 h1:YID/237grGDI7Hf0Mt4LQxhMyuH6cgv1e1llmeFP/AI=
+github.com/aitem/moby v0.0.0-20240622202140-24af7d8d6123/go.mod h1:RJBaa2t5bp90WMPZu0VecMGCeITyyOUw+u53hdS1/Sc=
 github.com/alecthomas/kingpin/v2 v2.4.0 h1:f48lwail6p8zpO1bC4TxtqACaGqHYA22qkHjHpqDjYY=
 github.com/alecthomas/kingpin/v2 v2.4.0/go.mod h1:0gyi0zQnjuFk8xrkNKamJoyUo382HRL7ATRpFZCw6tE=
 github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc/go.mod h1:LOuyumcjzFXgccqObfd/Ljyb9UuFJ6TxHnclSeseNhc=
