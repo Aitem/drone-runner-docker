@@ -226,6 +226,7 @@ func toMount(source *Volume, target *VolumeMount) mount.Mount {
 		to.TmpfsOptions = &mount.TmpfsOptions{
 			SizeBytes: source.EmptyDir.SizeLimit,
 			Mode:      0777,
+			Options:   [][]string{[]string{"exec"}},
 		}
 	}
 	return to
