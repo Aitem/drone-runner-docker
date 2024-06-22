@@ -6,6 +6,7 @@ package engine
 
 import (
 	"context"
+	"fmt"
 	"io"
 	"io/ioutil"
 	"os"
@@ -260,7 +261,7 @@ func (e *Docker) create(ctx context.Context, spec *Spec, step *Step, output io.W
 		}
 	}
 
-	println("host config {:?}", toHostConfig(spec, step))
+	fmt.Printf("HOST CONFIG: %+v\n", toHostConfig(spec, step))
 	_, err := e.client.ContainerCreate(ctx,
 		toConfig(spec, step),
 		toHostConfig(spec, step),
@@ -270,7 +271,7 @@ func (e *Docker) create(ctx context.Context, spec *Spec, step *Step, output io.W
 	)
 
 	if err != nil {
-		println("------- {:?}", err)
+		fmt.Printf("ERR: %+v\n", err)
 	}
 
 	// automatically pull and try to re-create the image if the
@@ -291,7 +292,7 @@ func (e *Docker) create(ctx context.Context, spec *Spec, step *Step, output io.W
 		// once the image is successfully pulled we attempt to
 		// re-create the container.
 		// TODO: fix that - platform
-		println("host config 222 {:?} ", toHostConfig(spec, step))
+		fmt.Printf("HOST CONFIG 2: %+v\n", toHostConfig(spec, step))
 		_, err = e.client.ContainerCreate(ctx,
 			toConfig(spec, step),
 			toHostConfig(spec, step),
