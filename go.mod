@@ -6,12 +6,14 @@ toolchain go1.21.6
 
 replace gopkg.in/alecthomas/kingpin.v2 => github.com/alecthomas/kingpin/v2 v2.4.0
 
+replace github.com/docker/docker => github.com/aitem/moby v0.0.0-20240622125322-721a8d741821
+
 require (
-	// github.com/alecthomas/kingpin/v2 v2.4.0
 	github.com/buildkite/yaml v2.1.0+incompatible
 	github.com/dchest/uniuri v1.2.0
 	github.com/docker/distribution v0.0.0-20210126121258-a91f895a50e9 // v2.8.3+incompatible
 	github.com/docker/docker v27.0.1-rc.1.0.20240621131212-ff1e2c0de72a+incompatible
+	// github.com/docker/docker v27.0.1-rc.1.0.20240621131212-ff1e2c0de72a+incompatible
 	github.com/drone/drone-go v1.7.1
 	github.com/drone/envsubst v1.0.3
 	github.com/drone/runner-go v1.12.0
@@ -30,6 +32,7 @@ require (
 	github.com/99designs/basicauth-go v0.0.0-20230316000542-bf6f9cbbf0f8 // indirect
 	github.com/99designs/httpsignatures-go v0.0.0-20170731043157-88528bf4ca7e // indirect
 	github.com/Microsoft/go-winio v0.6.2 // indirect
+	// github.com/aitem/moby v0.0.0-20240622125322-721a8d741821 // indirect
 	github.com/alecthomas/units v0.0.0-20231202071711-9a357b53e9c9 // indirect
 	github.com/bmatcuk/doublestar v1.3.4 // indirect
 	github.com/containerd/log v0.1.0 // indirect
@@ -69,3 +72,5 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gotest.tools/v3 v3.5.1 // indirect
 )
+
+// require github.com/aitem/moby v0.0.0-20240622125322-721a8d741821 // indirect
