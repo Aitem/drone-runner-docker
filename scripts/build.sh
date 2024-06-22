@@ -10,4 +10,4 @@ set -e
 set -x
 
 # linux
-GOOS=linux GOARCH=arm64 go build -mod vendor -o release/linux/arm64/drone-runner-docker
+GOOS=linux GOARCH=amd64 go build -mod=vendor -o release/linux/amd64/drone-runner-docker
