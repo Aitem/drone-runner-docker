@@ -7,6 +7,7 @@ toolchain go1.21.6
 replace gopkg.in/alecthomas/kingpin.v2 => github.com/alecthomas/kingpin/v2 v2.4.0
 
 replace github.com/docker/docker => github.com/aitem/moby v0.0.0-20240622172954-461424aafe66 // indirect
+replace github.com/docker/docker/volume/mounts => github.com/aitem/moby/volume/mounts v0.0.0-20240622172954-461424aafe66 // indirect
 
 require (
 	github.com/buildkite/yaml v2.1.0+incompatible
