@@ -11,6 +11,8 @@ github.com/Azure/go-autorest v10.8.1+incompatible/go.mod h1:r+4oMnoxhatjLLJ6zxSW
 github.com/Microsoft/go-winio v0.6.2 h1:F2VQgta7ecxGYO8k3ZZz3RS8fVIXVxONVUPlNERoyfY=
 github.com/Microsoft/go-winio v0.6.2/go.mod h1:yd8OoFMLzJbo9gZq8j5qaps8bJ9aShtEA8Ipt1oGCvU=
 github.com/Shopify/logrus-bugsnag v0.0.0-20171204204709-577dee27f20d/go.mod h1:HI8ITrYtUY+O+ZhtlqUnD8+KwNPOyugEhfP9fdUIaEQ=
+github.com/aitem/moby v0.0.0-20240622125322-721a8d741821 h1:zR53sWQ9bHHZ3/pf1GwlkrQaHrwC7ws3jEWQQMDd5yw=
+github.com/aitem/moby v0.0.0-20240622125322-721a8d741821/go.mod h1:RJBaa2t5bp90WMPZu0VecMGCeITyyOUw+u53hdS1/Sc=
 github.com/alecthomas/kingpin/v2 v2.4.0 h1:f48lwail6p8zpO1bC4TxtqACaGqHYA22qkHjHpqDjYY=
 github.com/alecthomas/kingpin/v2 v2.4.0/go.mod h1:0gyi0zQnjuFk8xrkNKamJoyUo382HRL7ATRpFZCw6tE=
 github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc/go.mod h1:LOuyumcjzFXgccqObfd/Ljyb9UuFJ6TxHnclSeseNhc=
@@ -53,8 +55,6 @@ github.com/distribution/reference v0.6.0/go.mod h1:BbU0aIcezP1/5jX/8MP0YiH4SdvB5
 github.com/dnaeon/go-vcr v1.0.1/go.mod h1:aBB1+wY4s93YsC3HHjMBMrwTj2R9FHDzUr9KyGc8n1E=
 github.com/docker/distribution v0.0.0-20210126121258-a91f895a50e9 h1:NFzP9wb+O7TQBAJdd83h8lIFagFKXKZjpu9JDgtlZyk=
 github.com/docker/distribution v0.0.0-20210126121258-a91f895a50e9/go.mod h1:3MZHl2twGO5AALVRzN5pgJNCNS5WFMIfVXYT4qL7RtM=
-github.com/docker/docker v27.0.1-rc.1.0.20240621131212-ff1e2c0de72a+incompatible h1:FKVJYmkfC2Rwthnhi5P2x/MVBAF/mwiQ7StbTBpjJrg=
-github.com/docker/docker v27.0.1-rc.1.0.20240621131212-ff1e2c0de72a+incompatible/go.mod h1:eEKB0N0r5NX/I1kEveEz05bcu8tLC/8azJZsviup8Sk=
 github.com/docker/go-connections v0.5.0 h1:USnMq7hx7gwdVZq1L49hLXaFtUdTADjXGp+uj1Br63c=
 github.com/docker/go-connections v0.5.0/go.mod h1:ov60Kzw0kKElRwhNs9UlUHAE/F9Fe6GLaXnqyDdmEXc=
 github.com/docker/go-events v0.0.0-20190806004212-e31b211e4f1c/go.mod h1:Uw6UezgYA44ePAFQYUehOuCzmy5zmg/+nl2ZfMWGkpA=
